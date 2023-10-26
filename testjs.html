@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Dropdown Input Window</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <form id="form">
+        <input type="text" id="search" style="width: 200px; height: 50px;" placeholder="Start typing...">
+        <select id="dropdown" style="width: 200px; height: 50px;"></select>
+        <input type="submit" value="Submit">
+    </form>
+<div id="result"></div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Duplicator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <form id="string-form">
+        <label for="string-input">Enter a string:</label>
+        <input type="text" id="string-input" name="string-input">
+        <input type="submit" value="Submit">
+    </form>
+    <p id="result"></p>
+
+    <script>
+        $(document).ready(function() {
+            $('#string-form').on('submit', function(e) {
+                e.preventDefault();
+                $.ajax({
+                    url: '/localhost:5000/duplicate',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ 'string': $('#string-input').val() }),
+                    dataType: 'json',
+                    success: function(data) {
+                        $('#result').text(data.duplicated_string);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+-->
+<!--
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Node Search</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="script.js"></script>
+</head>
+<body>
+    <form id="searchForm" action="/cgi-bin/find_edges.py" method="post">
+        <input type="text" id="search" name="string">
+        <select id="dropdown"></select>
+        <input type="submit" value="Submit">
+    </form>
+    <div id="result"></div>
+</body>
+</html>
+-->
+
