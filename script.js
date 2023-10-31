@@ -72,7 +72,8 @@ function submitForm() {
 
     var nodeId = $('#dropdown').val();
     $.ajax({
-        url: '/cgi-bin/find_edges.py',
+        /*url: 'http://localhost:5000/find_edges',*/
+        url: 'http://localhost:5000/find_edges',
         data: JSON.stringify({ 'nodeId': nodeId }),
         type: 'POST',
         contentType: 'application/json;charset=UTF-8',
